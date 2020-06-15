@@ -7,16 +7,74 @@
 </head>
 <body>
     <form action='/destination.html' method="POST">
-        <label for='first-name'>First name</label>
-        <input type='text' id='first-name' name='userFirstName'> 
-        <label for='last-name'>Last name</label>
-        <input type='text' id='last-name' name='userLastName'>
-        <label for='email'>Email address</label>
-        <input type='email' id='email' name='userEmail'>
-        <label for='age'>Age</label>
-        <input type='number' id='age' name='userAge' step='1'>
-        <label for='password'>Password</label>
-        <input type='password' id='password' name='userPassword'>
+        <div id='firstName'>
+            <label for='first-name'>First name</label>
+            <input type='text' id='first-name' name='userFirstName'>
+        </div>
+        <br>
+        <div id='lastName'>
+            <label for='last-name'>Last name</label>
+            <input type='text' id='last-name' name='userLastName'>
+        </div>
+        <br>
+        <div id='emailAddress'>
+            <label for='email'>Email address</label>
+            <input type='email' id='email' name='userEmail'>
+        </div>
+        <br>
+        <div id='userAge'>
+            <label for='age'>Age</label>
+            <input type='number' id='age' name='userAge' step='1'>
+        </div>
+        <br>
+        <div id='userPass'>
+            <label for='password'>Password</label>
+            <input type='password' id='password' name='userPassword'>
+        </div>
+        <br>
+        <div id='rangeInput'>
+            <label for='vol'>Volume</label>
+            <input type='range' min='0' max='100' step='1' id='vol' name='userRange'>
+        </div>
+        <div id='genderCheckbox'>
+            <p>Select your gender</p>
+            <label for='guy'>Male</label>
+            <input type="radio" name='gender' id='guy' value="male">
+            <br>
+            <label for='women'>Female</label>
+            <input type="radio" name='gender' id='women' value='female'>
+        </div>
+        <br>
+        <div id='dropdown'>
+            <label for='units'>Preferred unit system</label>
+            <select id='units' name='units-system'>
+                <option value='metric'>Metric</option>
+                <option value='imperial'>Imperial</option>
+            </select>
+        </div>
+        <br>
+        <div id='datalist'>
+            <label for='country'>Where do you currently live?</label>
+            <input type='text' list='countries' id='country' name='countries'>
+            <datalist id='countries'>
+                <option value='UK'></option>
+                <option value='Romania'></option>
+                <option value='Germany'></option>
+                <option value='Austria'></option>
+                <option value='US'></option>
+                <option value='Italy'></option>
+                <option value='Spain'></option>
+            </datalist>
+        </div>
+        <br>
+        <div id=comments-section>
+            <label for='comment'>Add your comment</label>
+            <textarea id='comment' name='comment' rows='4' cols='30'></textarea>
+        </div>
+        <br>
+        <div id='submit-button'>
+            <input type='submit' value='Send'>
+        </div>
     </form>
 </body>
 </html>
